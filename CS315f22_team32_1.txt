@@ -1,0 +1,98 @@
+begin{
+
+## CORRECT PROGRAM EXAMPLE ##;
+## THIS PROGRAM HAS NO SYNTAX ERRORS ##;
+
+## TESTING DECLARATIONS ##;
+int tempInt;
+tempInt = 4;
+
+double tempDouble;
+tempDouble = 5.34;
+
+str testString;
+testString = ~ This is an example string ~;
+
+## TESTING OPERATIONS ##;
+
+tempInt = 9 + 8;
+tempInt2 = 9 + (8 * 6) - 9 / (6 * 7);
+tempInt++;
+tempDouble = (0.34 + 8.97) * (8.23 / 6.56) + 3.24;
+bool tempBool;
+tempBool = tempInt >= 7;
+
+## TESTING LOOPS ##;
+
+while( tempInt > 0 ){
+	tempInt = (tempInt) - 1;
+};
+
+for ( tempInt = 0; tempInt < 10; tempInt++ ){
+	bool placeHolder;
+	placeHolder = 5 !==! 9;
+	print( ~ <3 ~ );
+	scan();
+};
+
+## TESTING IF-ELSE ##;
+
+if ( ( 9 + 7 ) >= ( 45 * 6 ) ){
+	print( ~ Impossible ~);
+};
+
+
+if ( ( 4 == 5 ) AND tempBool ){
+	print( ~ something ~);
+	int count;
+	for ( count = 10; count > 0; count-- ){
+		count = (count) / 2;
+	};
+}
+else{
+	if ( tempInt !==! 20 ){
+		print( ~ inner if statement ~ );
+	}
+	else{
+		print( ~ inner else ~);
+	};
+};
+
+## TESTING CUSTOM FUNCTIONS ##;
+
+int foo(){
+	print( ~ inside function foo ~ );
+	int fooInt;
+	fooInt = 10;
+	if ( fooInt >= 5 ){
+		for ( fooInt = 10; fooInt <= (75*5); fooInt++){
+			print( ~ hello! ~);
+		};		
+	};
+};
+
+foo();
+
+int bar( int param1; str param2;){
+	print( ~ function with parameters ~);
+};
+int tempParam1;
+str tempParam2;
+bar( tempParam1; tempParam2; );
+
+## TESTING BUILT_IN_FUNCTIONS##;
+connect(~www.cs315.com~);
+send(8,~www.cs315.com~);
+receive(~www.cs315.com~);
+motor.setActuator(false);
+solenoid.setActuator(true);
+stepper_motor.setActuator(false);
+comb_drive.setActuator(false);
+valve.setActuator(true);
+servo.setActuator(true);
+readTemp( tempComponent; lightComponent;humidityComponent;pressureComponent;soundComponent; );
+readLight(tempComponent;soundComponent;);
+readPressure(pressureComponent;);
+readHumidity(humidityComponent;);
+
+}end

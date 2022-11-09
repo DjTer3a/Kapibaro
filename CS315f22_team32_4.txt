@@ -1,0 +1,33 @@
+begin{
+
+## INCORRECT PROGRAM EXAMPLE. THIS PROGRAM IS INCLUDED TO SHOW THAT THE PARSER CAN FIND ERRORS. ##;
+## THIS PROGRAM HAS A SYNTAX ERROR! ##;
+
+int tempInt;
+tempInt = 4;
+
+double tempDouble;
+tempDouble = 5.34;
+
+str testString;
+testString = ~ This is an example string ~;
+
+tempInt = 9 + 8;
+tempInt++;
+tempDouble = 0.34 + 8.97;
+bool tempBool				 # MISSING SEMICOLON #;
+tempBool = tempInt >= 7;
+
+while( tempInt > 0 ){
+	tempInt = (tempInt) - 1;
+};
+
+for ( tempInt = 0; tempInt < 10; tempInt++ ){
+	bool placeHolder;
+	placeHolder = 5 !==! 9;
+	print( ~ <3 ~ );
+	scan();
+};
+
+
+}end

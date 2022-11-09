@@ -1,0 +1,20 @@
+begin{
+
+## INCORRECT PROGRAM EXAMPLE. THIS PROGRAM IS INCLUDED TO SHOW THAT THE PARSER CAN FIND ERRORS. ##;
+## THIS PROGRAM HAS A SYNTAX ERROR! ##;
+
+connect(~www.cs315.com~);
+send(8,~www.cs315.com~);
+receive(~www.cs315.com~);
+motor.setActuator(false);
+solenoid.setActuator(true);
+stepper_motor.setActuator(false);
+comb_drive.setActuator(false);
+valve.setActuator(); 					## MISSING PARAMETER ##;
+servo.setActuator(true);
+readTemp( tempComponent; lightComponent;humidityComponent;pressureComponent;soundComponent; );
+readLight(tempComponent;soundComponent;);
+readPressure(pressureComponent;);
+readHumidity(humidityComponent;);
+
+}end

@@ -1,0 +1,27 @@
+begin{
+
+## INCORRECT PROGRAM EXAMPLE. THIS PROGRAM IS INCLUDED TO SHOW THAT THE PARSER CAN FIND ERRORS. ##;
+## THIS PROGRAM HAS A SYNTAX ERROR! ##;
+
+
+int foo(){
+	print( ~ inside function foo ~ );
+	int fooInt;
+	fooInt = 10;
+	if ( fooInt >= 5 ){
+		for ( fooInt = 10; fooInt <= (75*5); fooInt++){
+			print( ~ hello! ~);
+		};		
+	};
+};
+
+foo();
+
+int bar( int param1; str param2;){
+	print( function with parameters );				 # WRONG SYNTAX #;
+};
+int tempParam1;
+str tempParam2;
+bar( tempParam1; tempParam2; );
+
+}end
